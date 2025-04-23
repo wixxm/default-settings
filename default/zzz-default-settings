@@ -185,8 +185,8 @@ uci -q get network.globals.packet_steering > /dev/null || {
 }
 
 # disable coremark
-sed -i '/coremark/d' /etc/crontabs/root
-crontab /etc/crontabs/root
+#sed -i '/coremark/d' /etc/crontabs/root
+#crontab /etc/crontabs/root
 
 # init
 devices_setup
