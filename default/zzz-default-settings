@@ -139,6 +139,9 @@ uci commit system
 # extra packages
 echo "src/gz openwrt_extras https://op.055553.xyz/WikjxWrt-packages/$(. /etc/openwrt_release ; echo $DISTRIB_ARCH)" >> /etc/opkg/distfeeds.conf
 
+# 删除签名校验配置
+sed -i '/^option check_signature/d' /etc/opkg.conf
+
 # nginx
 uci set nginx.global.uci_enable='true'
 uci del nginx._lan
