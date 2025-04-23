@@ -137,7 +137,7 @@ uci commit system
 #fi
 
 # extra packages
-echo "src/gz openwrt_extras https://op.055553.xyz/WikjxWrt-packages/x86_64 /etc/openwrt_release ; echo $DISTRIB_ARCH)" >> /etc/opkg/distfeeds.conf
+echo "src/gz openwrt_extras https://op.055553.xyz/WikjxWrt-packages/$(. /etc/openwrt_release ; echo $DISTRIB_ARCH)" >> /etc/opkg/distfeeds.conf
 
 # nginx
 uci set nginx.global.uci_enable='true'
