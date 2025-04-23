@@ -8,9 +8,9 @@
 
 # OTA
 if [ "$VERSION_TYPE" = "minimal" ]; then
-    OTA_URL="https://api.cooluc.com/openwrt/ota_minimal.json"
+    OTA_URL="https://raw.githubusercontent.com/wixxm/wikjxwrt-6.12/refs/heads/api/fw.json"
 else
-    OTA_URL="https://api.cooluc.com/openwrt/ota.json"
+    OTA_URL="https://raw.githubusercontent.com/wixxm/wikjxwrt-6.12/refs/heads/api/fw.json"
 fi
 
 devices_setup()
